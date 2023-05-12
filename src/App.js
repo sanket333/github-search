@@ -45,6 +45,7 @@ function App() {
   }
 //Reacting to search bar query changes
   useEffect(() => {
+    console.log(1);
     let timer;
     if (query) {
       setLoading(true);
@@ -61,6 +62,8 @@ function App() {
       fetchData();
     }
   }, [sortText])
+
+  console.log(2)
 
   return (
     <div className="App">
